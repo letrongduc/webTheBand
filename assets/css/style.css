@@ -5,22 +5,42 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 #main {
-
+    height: 46px;
+    background-color: black;
 }
 
-#header {
+#nav {}
 
+#nav li {
+    display: inline-block;
 }
 
-#slider {
-
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
 }
 
-#content {
-
+#nav li:hover a {
+    color: black;
+    background-color: #ccc;
 }
 
-#footer {
-
+#nav .subnav {
+    display: none;
 }
+
+#header {}
+
+#slider {}
+
+#content {}
+
+#footer {}
