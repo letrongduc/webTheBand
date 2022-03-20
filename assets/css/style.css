@@ -10,37 +10,100 @@ html {
 }
 
 #main {
-    height: 46px;
-    background-color: black;
+    
 }
 
-#nav {}
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
 
 #nav li {
     display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
 }
 
 #nav li a {
-    color: white;
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
-    display: inline-block;
+    display: block;
 }
 
-#nav li:hover a {
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
     color: black;
     background-color: #ccc;
 }
 
 #nav .subnav {
     display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    min-width: 160px;
 }
 
-#header {}
+#nav .subnav a {
+    color: black;
+    padding-left: 12px;
+    line-height: 38px;
+}
 
-#slider {}
+#nav .subnav li {
+    width: 100%;
+}
 
-#content {}
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header {
+    top: 0;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 23px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: white;
+    line-height: 46px;
+}
+
+#slider {
+    background-color: red;
+    height: 500px;
+    margin-top: 46px;
+}
+
+#content {
+    height: 1000px;
+    background-color: black;
+}
 
 #footer {}
